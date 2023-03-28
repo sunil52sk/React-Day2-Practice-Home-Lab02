@@ -1,10 +1,13 @@
 import React from 'react'
-function Mybutton(props) {
+
+function Mybutton(props) { 
+  let count=0;
     function handleClick(){
-        alert("Hey !!!You Clicked :"+props.Text);
+      count++
+        alert("Hey !!!You Clicked :"+count);
     }
   return (
-    <div><button onClick={handleClick}>Click me{props.num}</button>
+    <div><button onClick={handleClick}>{props.Text}</button>
     <p></p></div>
   )
 }
